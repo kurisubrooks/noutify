@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <link href="grid.css" rel="stylesheet">
+    <title>Nougat Notify</title>
+    <style>
+
+        body {
+            margin: 0;
+            font-family: "Roboto", sans-serif;
+        }
+
+        ol, ul, li { display: inline-block; margin: 0; padding: 0; list-style: none;}
+        a { font-weight: 500; color: #0073EC; text-transform: uppercase; }
+
+        .notification {
+            margin: 0 auto;
+
+            width: 500px;
+            box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.4);
+            margin-bottom: 20px;
+        }
+
+        .notification .content {
+            padding: 20px;
+        }
+
+        .notification .content .app {
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+
+        .notification .content .app .icon {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 2px;
+        }
+
+        .notification .content .app .icon img {
+            display: block;
+            height: 20px; width: 20px;
+        }
+
+        .notification .content .app .app_name {
+            display: inline-block;
+            vertical-align: middle;
+            color: #0073EC;
+        }
+
+        .notification .content .app .time {
+            display: inline-block;
+            vertical-align: middle;
+            color: #757575;
+        }
+
+        .notification .content .app .time::before {
+            content: "\00a0•\00a0\00a0";
+        }
+
+        .notification .content .message {
+            line-height: 24px;
+        }
+
+        .notification .content .message .title {
+            font-size: 18px;
+            color: #212121;
+        }
+
+        .notification .content .message .message {
+            font-size: 18px;
+            color: #757575;
+        }
+
+        .notification .content .message .image,
+        .notification .content .message .image img {
+            margin-left: 8px;
+            display: block;
+        }
+
+        .notification .actions {
+            background: #EDEDED;
+            padding: 0 10px;
+        }
+
+        .notification .actions .action {
+            cursor: pointer;
+            font-size: 18px;
+            padding: 20px 10px;
+        }
+
+        .notification .actions .action:hover {
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="notification">
+        <div class="content">
+            <div class="app">
+                <div class="icon"><img src="icon.png"></div>
+                <div class="app_name">Messenger</div>
+                <div class="time">now</div>
+            </div>
+
+            <div class="message">
+                <div class="grid align-middle">
+                    <div class="cell">
+                        <div class="title">Alice Hanaki</div>
+                        <div class="message">Oh, I should probably eat</div>
+                    </div>
+
+                    <div class="cell align-middle set">
+                        <div class="image">
+                            <img src="kaori.png" height="48px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="notification">
+        <div class="content">
+            <div class="app">
+                <div class="icon"><img src="icon.png"></div>
+                <div class="app_name">Messenger</div>
+                <div class="time">now</div>
+            </div>
+
+            <div class="message">
+                <div class="grid align-middle">
+                    <div class="cell">
+                        <div class="title">Alice Hanaki</div>
+                        <div class="message">わぁい　チョコレートミルク<br>かおり　チョコレートミルク　大好き</div>
+                    </div>
+
+                    <div class="cell align-middle set">
+                        <div class="image">
+                            <img src="kaori.png" height="48px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="actions">
+            <ul>
+                <li class="action"><a>Like</a></li>
+                <li class="action"><a>Reply</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+</html>
