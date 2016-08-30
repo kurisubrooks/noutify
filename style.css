@@ -3,6 +3,7 @@ body {
     font-family: "Roboto", "Noto Sans JP", sans-serif;
 }
 
+p { margin: 0; padding: 0; }
 ol, ul, li { display: inline-block; margin: 0; padding: 0; list-style: none;}
 a { font-weight: 500; color: #0073EC; text-transform: uppercase; }
 
